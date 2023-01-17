@@ -18,6 +18,20 @@
         --lightgrayishblue: hsl(240, 5%, 91%);
 }
 body {
-    font-family: 'Kumbh Sans', sans-serif;
-    background-color: linear-gradient(--softviolet, --softblue);
-}  
+    width: 1420px;
+    height: 780px;
+    background: linear-gradient(var(--softviolet), var(--softblue));
+    font-family: 'Kumbh Sans', sans-serif;    
+}
+.menu {
+    margin: 130px 280px;
+    width: 920px;
+    height: 510px;
+    font-size: 12px;
+    background-color: var(--lightgrayishblue);
+}
+ul {
+    text-decoration: none;
+}
+
+
