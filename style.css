@@ -8,8 +8,8 @@
         --softred: hsl(14, 88%, 65%);
     /* ----Gradient---- */
     /* ----Background-gradient---- */
-        --softviolet: hsl(273, 75%, 66%);
-        --softblue: hsl(240, 73%, 65%);
+        --softviolet: #af67e9;
+        --softblue: #6565e7;
     /* ----Neutral---- */
     /* ----Text---- */
         --verydarkgrayishblue: hsl(237, 12%, 33%);
@@ -18,20 +18,57 @@
         --lightgrayishblue: hsl(240, 5%, 91%);
 }
 body {
-    width: 1420px;
-    height: 780px;
-    background: linear-gradient(var(--softviolet), var(--softblue));
-    font-family: 'Kumbh Sans', sans-serif;    
+    background-image: linear-gradient(var(--softviolet), var(--softblue));
+    font-family: 'Kumbh Sans', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    font-size: 10px;
 }
-.menu {
-    margin: 130px 280px;
-    width: 920px;
-    height: 510px;
-    font-size: 12px;
+.container {
+    margin: 10vh 15vw;
+    border-radius: 10px;
+    display: flex;
+    height: 60vh;
+    width: 70vw;
     background-color: var(--lightgrayishblue);
+    background-image: url(./images/bg-pattern-desktop.svg);
 }
-ul {
-    text-decoration: none;
+.accordion_header {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
 }
-
-
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.accordion_item {
+  border-radius: 5px;
+}
+.accordion_item:hover {
+  opacity: 0.9;
+}
+.accordion_content {
+  margin-left: 50px;
+  margin-right: 15px;
+  overflow: hidden;
+  height: 0;
+  transition: all .5s ease;
+  font-size: 14px;
+}
+.icon{
+    background-image: url(./images/icon-arrow-down.svg);
+    height: 0.9vh;
+    width: 0.8vw;
+}
+.active {
+  padding-bottom: 10px;
+}
+span, .icon {
+  font-weight: 600;
+}
+p {
+  text-align: justify;
+}
