@@ -1,38 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200&display=swap');
 
 :root {
-    /* ----Colors---- */
-    /* ----Primary---- */
-    /* ----Text---- */
-        --verydarkdesaturatedblue: hsl(238, 29%, 16%);
-        --softred: hsl(14, 88%, 65%);
-    /* ----Gradient---- */
-    /* ----Background-gradient---- */
-        --softviolet: #af67e9;
-        --softblue: #6565e7;
-    /* ----Neutral---- */
-    /* ----Text---- */
-        : hsl(237, 12%, 33%);
-        --darkgrayishblue: hsl(240, 6%, 50%);
-    /* ----Dividers---- */
-        --lightgrayishblue: hsl(240, 5%, 91%);
+  /* ----Colors---- */
+  /* ----Primary---- */
+  /* ----Text---- */
+  --verydarkdesaturatedblue: hsl(238, 29%, 16%);
+  --softred: hsl(14, 88%, 65%);
+  /* ----Gradient---- */
+  /* ----Background-gradient---- */
+  --softviolet: #af67e9;
+  --softblue: #6565e7;
+  /* ----Neutral---- */
+  /* ----Text---- */
+  --verydarkgrayishblue: hsl(237, 12%, 33%);
+  --darkgrayishblue: hsl(240, 6%, 50%);
+  /* ----Dividers---- */
+  --lightgrayishblue: hsl(240, 5%, 91%);
 }
 body {
-    background-image: linear-gradient(var(--softviolet), var(--softblue));
-    font-family: 'Kumbh Sans', sans-serif;
-    width: 100vw;
-    height: 100vh;
-    font-size: 10px;
+  display: flexbox;
+  background-image: linear-gradient(var(--softviolet), var(--softblue));
+  font-family: 'Kumbh Sans', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  font-size: 10px;
 }
-.container {--verydarkgrayishblue
-    margin: 10vh 15vw;
-    border-radius: 10px;
-    display: flex;
-    height: 60vh;
-    width: 70vw;
-    background-color: var(--lightgrayishblue);
-    background-image: url(./images/bg-pattern-desktop.svg);
+.box {
+  width: 55vw;
+  height: 60vh;
+  margin: 15% auto 11% auto;
+  background-color: var(--lightgrayishblue);
+  border-radius: 5px;
+  display: flex;
 }
+.img {
+  width: 55rem;
+  background-image: url(./images/bg-pattern-desktop.svg);
+}
+.img img {
+  position: relative;
+    top: 2vh;
+    right: 5vw;
+}
+
+.faq {
+  margin: 4% 2%;
+}
+footer {
+  background-color: var(--lightgrayishblue);
+  margin: 2% 33%;
+  border-radius: 5px;
+  box-shadow: 6px 6px 6px var(--verydarkgrayishblue);
+  transition-property: transform;
+  transition-duration: 0.4s;
+ 
+}
+footer:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+
+
+
 .intro {
   display: flex;
 }
@@ -65,25 +95,13 @@ header {
   padding: 0.75rem 1rem;
   font-size: large;
   font-weight: bolder;
-  width: 100%;
   background: var(--lightgrayishblue);
   border: none;
   outline: none;
 }
 
-footer {
-  padding: 0.75rem 1rem;
-  font-size: small;
-  width: 100%;
-  background: var(--lightgrayishblue);
-  border: none;
-  outline: none;
-}
 
 .accordion {
-  width: 70vw;
-  height: 60vh;
-  margin: 15% auto;
   overflow: hidden;
   border-radius: 10px;
   font-family: 'Kumbh Sans', sans-serif;
@@ -115,15 +133,13 @@ footer {
 .accordion-header.active i {
   transform: rotate(180deg);
 }
-
 .accordion-body {
   padding: 0 1rem;
-  background-color: #f3f3f3;
+  background-color: var(--lightgrayishblue);
   max-height: 0;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
 }
-
 .accordion-body.active {
   max-height: 10rem;
   padding: 1rem;

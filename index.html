@@ -7,64 +7,77 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     
     <link href="style.css" type="text/css" rel= "stylesheet">
-
+    <script type="text/javascript" src="text.js"></script>
 
     <title>Frontend Mentor | FAQ Accordion Card</title>
     </head>
     <body>
-    <div class="accordion">
-        <header>FAQ</header>
-        <div class="accordion-item">
-        <button class="accordion-header">
-            <strong>How many team members can I invit?</strong>
-            <i class="fas fa-angle-down"></i>
-        </button>
+        <div class="box">
+            <div class="img">
+                <img src="./images/illustration-woman-online-desktop.svg">
 
-        <div class="accordion-body">You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.<a href="" target="_blank"></a>.</div>
-        </div>
-    
-        <div class="accordion-item">
-        <button class="accordion-header">
-            <strong>What is the maximum file upload size?</strong>
-            <i class="fas fa-angle-down"></i>
-        </button>
-
-        <div class="accordion-body"> No more than 2GB. All files in your account must fit your allotted storage space.</div>
-        </div>
-
-        <div class="accordion-item">
-        <button class="accordion-header">
-            <strong>How do I reset my password?</strong>
-            <i class="fas fa-angle-down"></i>
-        </button>
-
-        <div class="accordion-body">Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</div>
-        </div>
-
-        <div class="accordion-item">
-            <button class="accordion-header">
-            <strong>Can I cancel my subscription?</strong>
-            <i class="fas fa-angle-down"></i>
-            </button>
-    
-        <div class="accordion-body">Yes! Send us a message and we’ll process your request no questions asked.</div>
-        </div>
+            </div>
+            <div class="faq">
+                <div data-js="accordion" class="accordion">
+                    <header>FAQ</header>
+                    <div class="accordion-item">
+                        <button data-accordion-header="1" class="accordion-header">
+                            <strong data-accordion-header="1">How many team members can I invit?</strong>
+                            <i data-accordion-header="1" class="fas fa-angle-down"><img src="images/icon-arrow-down.svg"></i>
+                        </button>
         
-        <div class="accordion-item">
-            <button class="accordion-header">
-            <strong>Do you provide additional support?</strong>
-            <i class="fas fa-angle-down"></i>
-            </button>
-    
-        <div class="accordion-body">Chat and email support is available 24/7. Phone lines are open during normal business hours.</div>
-        </div>
+                        <div data-accordion-body="1" class="accordion-body">You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.<a href="" target="_blank"></a>.</div>
+                    </div>
+                
+                    <div class="accordion-item">
+                        <button data-accordion-header="2" class="accordion-header">
+                            <strong data-accordion-header="2">What is the maximum file upload size?</strong>
+                            <i data-accordion-header="2" class="fas fa-angle-down"><img src="images/icon-arrow-down.svg"></i>
+                        </button>
+        
+                        <div data-accordion-body="2" class="accordion-body"> No more than 2GB. All files in your account must fit your allotted storage space.</div>
+                    </div>
+        
+                    <div class="accordion-item">
+                        <button data-accordion-header="3" class="accordion-header">
+                            <strong data-accordion-header="3">How do I reset my password?</strong>
+                            <i data-accordion-header="3" class="fas fa-angle-down"><img src="images/icon-arrow-down.svg"></i>
+                        </button>
+        
+                        <div data-accordion-body="3" class="accordion-body">Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</div>
+                    </div>
+        
+                    <div class="accordion-item">
+                        <button data-accordion-header="4" class="accordion-header">
+                            <strong data-accordion-header="4">Can I cancel my subscription?</strong>
+                            <i data-accordion-header="4" class="fas fa-angle-down"><img src="images/icon-arrow-down.svg"></i>
+                            </button>
+                    
+                        <div data-accordion-body="4" class="accordion-body">Yes! Send us a message and we’ll process your request no questions asked.</div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <button data-accordion-header="5" class="accordion-header">
+                            <strong data-accordion-header="5">Do you provide additional support?</strong>
+                            <i data-accordion-header="5" class="fas fa-angle-down"><img src="images/icon-arrow-down.svg"></i>
+                            </button>
+                    
+                        <div data-accordion-body="5" class="accordion-body">Chat and email support is available 24/7. Phone lines are open during normal business hours.</div>
+                    </div>
+                </div>
 
-    </body>
-    <footer>
-        <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">Your Name Here</a>.
+            </div>
+
         </div>
-    </footer>
+      
+        <script src="./text.js"></script>
+        <footer>
+            <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="#">Your Name Here</a>.
+            </div>
+        </footer>
+    </body>
+
 </html>
 
