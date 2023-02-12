@@ -59,14 +59,9 @@ footer:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
-
-
-
-
 .intro {
   display: flex;
 }
-
 .typing {
   position: relative;
   margin-left: 10px;
